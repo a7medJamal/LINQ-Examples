@@ -43,7 +43,7 @@
             this.btnGO.Name = "btnGO";
             this.btnGO.Size = new System.Drawing.Size(100, 28);
             this.btnGO.TabIndex = 0;
-            this.btnGO.Text = "GO";
+            this.btnGO.Text = "Select Files";
             this.btnGO.UseVisualStyleBackColor = true;
             this.btnGO.Click += new System.EventHandler(this.btnGO_Click);
             // 
