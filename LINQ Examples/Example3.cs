@@ -94,6 +94,41 @@ namespace LINQ_Examples
             foreach (var x in expr3)
                 lst.Items.Add(x);
         }
+
         #endregion
+
+
+        #region Projection Operators (Select)
+        private void Exam_4_Click(object sender, EventArgs e)
+        {
+            var expr1 = customers.Select(c => c.Name);
+            lst.Items.Clear();
+            foreach (var x in expr1)
+                lst.Items.Add(x);
+        }
+
+        private void Exam_5_Click(object sender, EventArgs e)
+        {
+            var expr2 = customers.Select(c => new { c.Name, c.City });
+            lst.Items.Clear();
+            foreach (var x in expr2)
+                lst.Items.Add(x.Name +"("+x.City+")");
+        }
+    
+        private void Exam_6_Click(object sender, EventArgs e)
+        {
+            var orders = customers
+                  .Where(c => c.Country == EnumCountries.Egypt)
+                  .Select(c => c.Orders);
+            lst.Items.Clear();
+            foreach (var x in orders)
+                foreach(var items in x)
+                lst.Items.Add(items.Quantity+"("+items.Shipped+")");
+        }
+        #endregion
+        private void Exam_7_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

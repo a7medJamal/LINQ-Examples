@@ -45,7 +45,7 @@
             this.Exam_1.Name = "Exam_1";
             this.Exam_1.Size = new System.Drawing.Size(150, 27);
             this.Exam_1.TabIndex = 4;
-            this.Exam_1.Text = "Select 1";
+            this.Exam_1.Text = "Where 1";
             this.Exam_1.UseVisualStyleBackColor = true;
             this.Exam_1.Click += new System.EventHandler(this.Exam_1_Click);
             // 
@@ -60,36 +60,37 @@
             // 
             // Exam_2
             // 
-            this.Exam_2.Location = new System.Drawing.Point(515, 80);
+            this.Exam_2.Location = new System.Drawing.Point(515, 67);
             this.Exam_2.Name = "Exam_2";
             this.Exam_2.Size = new System.Drawing.Size(150, 27);
             this.Exam_2.TabIndex = 5;
-            this.Exam_2.Text = "Select 2";
+            this.Exam_2.Text = "Where 2";
             this.Exam_2.UseVisualStyleBackColor = true;
             this.Exam_2.Click += new System.EventHandler(this.Exam_2_Click);
             // 
             // Exam_4
             // 
-            this.Exam_4.Location = new System.Drawing.Point(515, 168);
+            this.Exam_4.Location = new System.Drawing.Point(515, 133);
             this.Exam_4.Name = "Exam_4";
             this.Exam_4.Size = new System.Drawing.Size(150, 27);
             this.Exam_4.TabIndex = 7;
-            this.Exam_4.Text = "Select 4";
+            this.Exam_4.Text = "Select 1";
             this.Exam_4.UseVisualStyleBackColor = true;
+            this.Exam_4.Click += new System.EventHandler(this.Exam_4_Click);
             // 
             // Exam_3
             // 
-            this.Exam_3.Location = new System.Drawing.Point(515, 125);
+            this.Exam_3.Location = new System.Drawing.Point(515, 100);
             this.Exam_3.Name = "Exam_3";
             this.Exam_3.Size = new System.Drawing.Size(150, 27);
             this.Exam_3.TabIndex = 6;
-            this.Exam_3.Text = "Select 3";
+            this.Exam_3.Text = "Where 3";
             this.Exam_3.UseVisualStyleBackColor = true;
             this.Exam_3.Click += new System.EventHandler(this.Exam_3_Click);
             // 
             // Exam_8
             // 
-            this.Exam_8.Location = new System.Drawing.Point(515, 342);
+            this.Exam_8.Location = new System.Drawing.Point(515, 265);
             this.Exam_8.Name = "Exam_8";
             this.Exam_8.Size = new System.Drawing.Size(150, 27);
             this.Exam_8.TabIndex = 11;
@@ -98,30 +99,33 @@
             // 
             // Exam_7
             // 
-            this.Exam_7.Location = new System.Drawing.Point(515, 299);
+            this.Exam_7.Location = new System.Drawing.Point(515, 232);
             this.Exam_7.Name = "Exam_7";
             this.Exam_7.Size = new System.Drawing.Size(150, 27);
             this.Exam_7.TabIndex = 10;
-            this.Exam_7.Text = "Select 7";
+            this.Exam_7.Text = "Select Many 1";
             this.Exam_7.UseVisualStyleBackColor = true;
+            this.Exam_7.Click += new System.EventHandler(this.Exam_7_Click);
             // 
             // Exam_6
             // 
-            this.Exam_6.Location = new System.Drawing.Point(515, 254);
+            this.Exam_6.Location = new System.Drawing.Point(515, 199);
             this.Exam_6.Name = "Exam_6";
             this.Exam_6.Size = new System.Drawing.Size(150, 27);
             this.Exam_6.TabIndex = 9;
-            this.Exam_6.Text = "Select 6";
+            this.Exam_6.Text = "Select 3";
             this.Exam_6.UseVisualStyleBackColor = true;
+            this.Exam_6.Click += new System.EventHandler(this.Exam_6_Click);
             // 
             // Exam_5
             // 
-            this.Exam_5.Location = new System.Drawing.Point(515, 211);
+            this.Exam_5.Location = new System.Drawing.Point(515, 166);
             this.Exam_5.Name = "Exam_5";
             this.Exam_5.Size = new System.Drawing.Size(150, 27);
             this.Exam_5.TabIndex = 8;
-            this.Exam_5.Text = "Select 5";
+            this.Exam_5.Text = "Select 2";
             this.Exam_5.UseVisualStyleBackColor = true;
+            this.Exam_5.Click += new System.EventHandler(this.Exam_5_Click);
             // 
             // Example3
             // 
