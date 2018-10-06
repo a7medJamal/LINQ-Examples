@@ -97,7 +97,6 @@ namespace LINQ_Examples
 
         #endregion
 
-
         #region Projection Operators (Select)
         private void Exam_4_Click(object sender, EventArgs e)
         {
@@ -171,6 +170,32 @@ namespace LINQ_Examples
             lst.Items.Clear();
             foreach (var x in orders)
                 lst.Items.Add(x.Quantity + "(" + x.Shipped + ")");
+        }
+        #endregion
+
+        #region Ordering OPerators (OrderBy)
+        private void Exam_11_Click(object sender, EventArgs e)
+        {
+            var expr =
+                from x in customers
+                where x.Country == EnumCountries.Egypt
+                orderby x.Name descending
+                select new { x.Name, x.City };
+            lst.Items.Clear();
+            foreach (var c in expr)
+                lst.Items.Add(c.Name+"("+c.City+")");
+        }
+        #endregion
+        #region Ordering OPerators (OrderBy Descending)
+        private void Exam_12_Click(object sender, EventArgs e)
+        {
+            var expr = customers
+                .Where(x => x.Country == EnumCountries.Egypt)
+                .OrderByDescending(x => x.Name)
+                 .Select(x => new { x.Name, x.City });
+            lst.Items.Clear();
+            foreach (var c in expr)
+                lst.Items.Add(c.Name + "(" + c.City + ")");
         }
         #endregion
     }

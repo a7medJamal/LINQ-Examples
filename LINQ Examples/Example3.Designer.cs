@@ -64,9 +64,9 @@
             // 
             this.lst.FormattingEnabled = true;
             this.lst.ItemHeight = 16;
-            this.lst.Location = new System.Drawing.Point(37, 17);
+            this.lst.Location = new System.Drawing.Point(12, 21);
             this.lst.Name = "lst";
-            this.lst.Size = new System.Drawing.Size(463, 612);
+            this.lst.Size = new System.Drawing.Size(463, 436);
             this.lst.TabIndex = 3;
             // 
             // Exam_2
@@ -148,12 +148,13 @@
             // 
             // Exam_12
             // 
-            this.Exam_12.Location = new System.Drawing.Point(515, 397);
+            this.Exam_12.Location = new System.Drawing.Point(481, 397);
             this.Exam_12.Name = "Exam_12";
-            this.Exam_12.Size = new System.Drawing.Size(150, 27);
+            this.Exam_12.Size = new System.Drawing.Size(184, 27);
             this.Exam_12.TabIndex = 15;
-            this.Exam_12.Text = "Select Many 2";
+            this.Exam_12.Text = "Orderby Descending 2";
             this.Exam_12.UseVisualStyleBackColor = true;
+            this.Exam_12.Click += new System.EventHandler(this.Exam_12_Click);
             // 
             // Exam_11
             // 
@@ -161,8 +162,9 @@
             this.Exam_11.Name = "Exam_11";
             this.Exam_11.Size = new System.Drawing.Size(150, 27);
             this.Exam_11.TabIndex = 14;
-            this.Exam_11.Text = "Select Many 1";
+            this.Exam_11.Text = "Orderby 1";
             this.Exam_11.UseVisualStyleBackColor = true;
+            this.Exam_11.Click += new System.EventHandler(this.Exam_11_Click);
             // 
             // Exam_10
             // 
