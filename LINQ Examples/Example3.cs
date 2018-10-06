@@ -198,5 +198,56 @@ namespace LINQ_Examples
                 lst.Items.Add(c.Name + "(" + c.City + ")");
         }
         #endregion
+
+        #region Ordering OPerators (ThenBy ,TenBy Descending,Revers)
+        private void Exam_13_Click(object sender, EventArgs e)
+        {
+            var expr = customers
+                .Where(c => c.Country == EnumCountries.Egypt)
+                .OrderByDescending(c => c.Name)
+                .ThenBy(c => c.City)
+                .Select(c => new { c.Name, c.City });
+            lst.Items.Clear();
+            foreach (var c in expr)
+                lst.Items.Add(c.Name + "(" + c.City + ")");
+        }
+
+        private void Exam_14_Click(object sender, EventArgs e)
+        {
+            //this LINQ Operators (why ... because start from *** from** condestion)
+            var expr =
+                from c in customers
+                where c.Country == EnumCountries.Egypt
+                 orderby  c.Name descending ,c.City
+                select  new { c.Name, c.City };
+            lst.Items.Clear();
+            foreach (var c in expr)
+                lst.Items.Add(c.Name + "(" + c.City + ")");
+        }
+
+        private void Exam_15_Click(object sender, EventArgs e)
+        {
+            var expr =
+                from c in customers
+                from o in c.Orders
+                orderby o.Month descending
+                select o;
+              lst.Items.Clear();
+            foreach (var c in expr)
+                lst.Items.Add(c.Quantity + "(" + c.Month + ")");
+        }
+
+        private void Exam_16_Click(object sender, EventArgs e)
+        {
+            var expr = customers
+                .Where(c => c.Country == EnumCountries.Egypt)
+                .OrderByDescending(c => c.Name)
+                .ThenBy(c => c.City)
+                .Select(c => new { c.Name, c.City }).Reverse();
+            lst.Items.Clear();
+            foreach (var c in expr)
+                lst.Items.Add(c.Name + "(" + c. City + ")");
+        }
+        #endregion
     }
 }

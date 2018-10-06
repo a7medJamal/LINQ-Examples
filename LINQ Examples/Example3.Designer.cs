@@ -148,6 +148,7 @@
             // 
             // Exam_12
             // 
+            this.Exam_12.ForeColor = System.Drawing.Color.DarkCyan;
             this.Exam_12.Location = new System.Drawing.Point(481, 397);
             this.Exam_12.Name = "Exam_12";
             this.Exam_12.Size = new System.Drawing.Size(184, 27);
@@ -158,6 +159,7 @@
             // 
             // Exam_11
             // 
+            this.Exam_11.ForeColor = System.Drawing.Color.DarkCyan;
             this.Exam_11.Location = new System.Drawing.Point(515, 364);
             this.Exam_11.Name = "Exam_11";
             this.Exam_11.Size = new System.Drawing.Size(150, 27);
@@ -190,39 +192,47 @@
             // 
             // Exam_16
             // 
-            this.Exam_16.Location = new System.Drawing.Point(515, 529);
+            this.Exam_16.ForeColor = System.Drawing.Color.Coral;
+            this.Exam_16.Location = new System.Drawing.Point(481, 529);
             this.Exam_16.Name = "Exam_16";
-            this.Exam_16.Size = new System.Drawing.Size(150, 27);
+            this.Exam_16.Size = new System.Drawing.Size(184, 27);
             this.Exam_16.TabIndex = 19;
-            this.Exam_16.Text = "Select Many 2";
+            this.Exam_16.Text = "ThenBy Descending 4";
             this.Exam_16.UseVisualStyleBackColor = true;
+            this.Exam_16.Click += new System.EventHandler(this.Exam_16_Click);
             // 
             // Exam_15
             // 
-            this.Exam_15.Location = new System.Drawing.Point(515, 496);
+            this.Exam_15.ForeColor = System.Drawing.Color.Coral;
+            this.Exam_15.Location = new System.Drawing.Point(481, 496);
             this.Exam_15.Name = "Exam_15";
-            this.Exam_15.Size = new System.Drawing.Size(150, 27);
+            this.Exam_15.Size = new System.Drawing.Size(184, 27);
             this.Exam_15.TabIndex = 18;
-            this.Exam_15.Text = "Select Many 1";
+            this.Exam_15.Text = "ThenBy Descending 3";
             this.Exam_15.UseVisualStyleBackColor = true;
+            this.Exam_15.Click += new System.EventHandler(this.Exam_15_Click);
             // 
             // Exam_14
             // 
-            this.Exam_14.Location = new System.Drawing.Point(515, 463);
+            this.Exam_14.ForeColor = System.Drawing.Color.Coral;
+            this.Exam_14.Location = new System.Drawing.Point(481, 463);
             this.Exam_14.Name = "Exam_14";
-            this.Exam_14.Size = new System.Drawing.Size(150, 27);
+            this.Exam_14.Size = new System.Drawing.Size(184, 27);
             this.Exam_14.TabIndex = 17;
-            this.Exam_14.Text = "Select 3";
+            this.Exam_14.Text = "ThenBy Descending 2";
             this.Exam_14.UseVisualStyleBackColor = true;
+            this.Exam_14.Click += new System.EventHandler(this.Exam_14_Click);
             // 
             // Exam_13
             // 
+            this.Exam_13.ForeColor = System.Drawing.Color.Coral;
             this.Exam_13.Location = new System.Drawing.Point(515, 430);
             this.Exam_13.Name = "Exam_13";
             this.Exam_13.Size = new System.Drawing.Size(150, 27);
             this.Exam_13.TabIndex = 16;
-            this.Exam_13.Text = "Select 2";
+            this.Exam_13.Text = "ThenBy 1";
             this.Exam_13.UseVisualStyleBackColor = true;
+            this.Exam_13.Click += new System.EventHandler(this.Exam_13_Click);
             // 
             // Exam_18
             // 
