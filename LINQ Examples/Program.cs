@@ -16,7 +16,7 @@ namespace LINQ_Examples
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LINQ_Examples());
+            Application.Run(new Example3());
         }
     }
 }

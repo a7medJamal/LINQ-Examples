@@ -44,16 +44,39 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="LINQ Examples.cs">
+    <Compile Include="Customer.cs" />
+    <Compile Include="EnumCountries.cs" />
+    <Compile Include="EX2_Developer.cs" />
+    <Compile Include="Example2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LINQ Examples.Designer.cs">
-      <DependentUpon>LINQ Examples.cs</DependentUpon>
+    <Compile Include="Example2.Designer.cs">
+      <DependentUpon>Example2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Example3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Example3.Designer.cs">
+      <DependentUpon>Example3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LINQ Example1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LINQ Example1.Designer.cs">
+      <DependentUpon>LINQ Example1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order.cs" />
+    <Compile Include="Product.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="LINQ Examples.resx">
-      <DependentUpon>LINQ Examples.cs</DependentUpon>
+    <EmbeddedResource Include="Example2.resx">
+      <DependentUpon>Example2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Example3.resx">
+      <DependentUpon>Example3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LINQ Example1.resx">
+      <DependentUpon>LINQ Example1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -76,6 +99,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="img\linq flavors.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
