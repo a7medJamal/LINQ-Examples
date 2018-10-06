@@ -126,9 +126,52 @@ namespace LINQ_Examples
                 lst.Items.Add(items.Quantity+"("+items.Shipped+")");
         }
         #endregion
+
+        #region Projection Operators (Select Many)
         private void Exam_7_Click(object sender, EventArgs e)
         {
-
+            IEnumerable<Order> orders = customers
+                .Where(c => c.Country == EnumCountries.Egypt)
+                .SelectMany(c => c.Orders);
+            lst.Items.Clear();
+            foreach (var x in orders)
+                lst.Items.Add(x.Quantity+"("+x.Shipped+")");
         }
+
+        private void Exam_8_Click(object sender, EventArgs e)
+        {
+            IEnumerable<Order> orders =
+                from c in customers
+                where c.Country == EnumCountries.Egypt
+                from o in c.Orders
+                select o;
+            lst.Items.Clear();
+            foreach (var x in orders)
+                lst.Items.Add(x.Quantity + "(" + x.Shipped + ")");
+         }
+   
+        private void Exam_9_Click(object sender, EventArgs e)
+        {
+            var items = customers
+                .Where(c => c.Country == EnumCountries.Egypt)
+                .SelectMany(c => c.Orders, (c, o) => new { o.Quantity, o.Shipped });
+             lst.Items.Clear();
+            foreach (var x in items)
+                lst.Items.Add(x.Quantity + "(" + x.Shipped + ")");
+        }
+      
+
+        private void Exam_10_Click(object sender, EventArgs e)
+        {
+            var orders =
+                from c in customers
+                .Where(c => c.Country == EnumCountries.Egypt)
+                from o in c.Orders
+                select new { o.Quantity, o.Shipped };
+            lst.Items.Clear();
+            foreach (var x in orders)
+                lst.Items.Add(x.Quantity + "(" + x.Shipped + ")");
+        }
+        #endregion
     }
 }
