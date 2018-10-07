@@ -282,10 +282,11 @@ namespace LINQ_Examples
                 foreach (var cust in countries)
                     lst.Items.Add("      " + cust.Name + "(" + cust.City + ")");
             }
-           
+
         }
         #endregion
 
+        #region Join Operator
         private void Exam_19_Click(object sender, EventArgs e)
         {
             var expr = customers
@@ -294,7 +295,7 @@ namespace LINQ_Examples
                 (o, p) => new { o.Month, o.Quantity, p.IdProduct, o.Shipped });
             lst.Items.Clear();
             foreach (var c in expr)
-                lst.Items.Add("Shipped (" + c.Shipped+")"+ "IdProduct (" + c.IdProduct+")"+ "Month (" + c.Month+")"+ "Quantity (" + c.Quantity+")");
+                lst.Items.Add("Shipped (" + c.Shipped + ")" + "IdProduct (" + c.IdProduct + ")" + "Month (" + c.Month + ")" + "Quantity (" + c.Quantity + ")");
         }
 
         private void Exam_20_Click(object sender, EventArgs e)
@@ -304,11 +305,68 @@ namespace LINQ_Examples
                from o in c.Orders
                join p in prodeucts
                on o.ProductID equals p.IdProduct
-               select new { o.ProductID, o.Quantity, o.Shipped ,p.IdProduct,o.Month};
+               select new { o.ProductID, o.Quantity, o.Shipped, p.IdProduct, o.Month };
 
             lst.Items.Clear();
             foreach (var c in expr)
                 lst.Items.Add("Shipped (" + c.Shipped + ")" + "IdProduct (" + c.IdProduct + ")" + "Month (" + c.Month + ")" + "Quantity (" + c.Quantity + ")");
+        }
+        #endregion
+
+        #region Group Join & SubQuery
+        private void Exam_21_Click(object sender, EventArgs e)
+        {
+            var expr = prodeucts
+                .GroupJoin(customers.SelectMany(c => c.Orders),
+                p => p.IdProduct,
+                o => o.ProductID,
+                (p, o) => new { p.IdProduct, o });
+            lst.Items.Clear();
+            foreach (var item in expr)
+            {
+                lst.Items.Add("Product (" + item.IdProduct + ")"  );
+                foreach (var order in item.o)
+                    lst.Items.Add("       Qty" + order.Quantity+"- Month"+order.Month);
+            }
+        }
+
+        private void Exam_22_Click(object sender, EventArgs e)
+        {
+            var order =
+                from c in customers
+                from o in c.Orders
+                select o;
+            var expr = from p in prodeucts
+                       join o in order
+                       on p.IdProduct equals o.ProductID into o
+                       select new { p.IdProduct, p.Price, ord=o };
+
+            lst.Items.Clear();
+            foreach (var item in expr)
+            {
+                lst.Items.Add("Product (" + item.IdProduct + ")"+item.Price);
+                foreach (var orders in item.ord)
+                    lst.Items.Add("       Qty" + orders.Quantity + "- Month" + orders.Month);
+            }
+        }
+
+        private void Exam_23_Click(object sender, EventArgs e)
+        {
+            var expr = from o in prodeucts
+                       join y in (from c in customers
+                                  from p in c.Orders
+                                  select p )
+           on o.IdProduct equals   y.ProductID into orders
+                       select new { o.IdProduct, o.Price, ord = orders };
+
+            lst.Items.Clear();
+            foreach (var item in expr)
+            {
+                lst.Items.Add("Product (" + item.IdProduct + ")" + item.Price);
+                foreach (var orders in item.ord)
+                    lst.Items.Add("       Qty" + orders.Quantity + "- Month" + orders.Month);
+            }
+            #endregion
         }
     }
 }
