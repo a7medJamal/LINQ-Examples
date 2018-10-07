@@ -324,9 +324,9 @@ namespace LINQ_Examples
             lst.Items.Clear();
             foreach (var item in expr)
             {
-                lst.Items.Add("Product (" + item.IdProduct + ")"  );
+                lst.Items.Add("Product (" + item.IdProduct + ")");
                 foreach (var order in item.o)
-                    lst.Items.Add("       Qty" + order.Quantity+"- Month"+order.Month);
+                    lst.Items.Add("       Qty" + order.Quantity + "- Month" + order.Month);
             }
         }
 
@@ -339,12 +339,12 @@ namespace LINQ_Examples
             var expr = from p in prodeucts
                        join o in order
                        on p.IdProduct equals o.ProductID into o
-                       select new { p.IdProduct, p.Price, ord=o };
+                       select new { p.IdProduct, p.Price, ord = o };
 
             lst.Items.Clear();
             foreach (var item in expr)
             {
-                lst.Items.Add("Product (" + item.IdProduct + ")"+item.Price);
+                lst.Items.Add("Product (" + item.IdProduct + ")" + item.Price);
                 foreach (var orders in item.ord)
                     lst.Items.Add("       Qty" + orders.Quantity + "- Month" + orders.Month);
             }
@@ -355,8 +355,8 @@ namespace LINQ_Examples
             var expr = from o in prodeucts
                        join y in (from c in customers
                                   from p in c.Orders
-                                  select p )
-           on o.IdProduct equals   y.ProductID into orders
+                                  select p)
+           on o.IdProduct equals y.ProductID into orders
                        select new { o.IdProduct, o.Price, ord = orders };
 
             lst.Items.Clear();
@@ -366,7 +366,7 @@ namespace LINQ_Examples
                 foreach (var orders in item.ord)
                     lst.Items.Add("       Qty" + orders.Quantity + "- Month" + orders.Month);
             }
-          
+
         }
         #endregion
 
@@ -379,18 +379,18 @@ namespace LINQ_Examples
             lst.Items.Clear();
             foreach (var x in expr)
             {
-                lst.Items.Add("ID Product"+"_"+x.IdProduct+"-"+"Price"+"_"+x.Price);
-                 
+                lst.Items.Add("ID Product" + "_" + x.IdProduct + "-" + "Price" + "_" + x.Price);
+
             }
         }
 
         private void Exam_25_Click(object sender, EventArgs e)
         {
-            var expr = ( from c in customers
-                       from o in c.Orders
-                       join p in prodeucts
-                       on o.ProductID equals p.IdProduct
-                       select p).Distinct();
+            var expr = (from c in customers
+                        from o in c.Orders
+                        join p in prodeucts
+                        on o.ProductID equals p.IdProduct
+                        select p).Distinct();
             lst.Items.Clear();
             foreach (var x in expr)
             {
@@ -416,9 +416,9 @@ namespace LINQ_Examples
                 (from c in customers
                  from o in c.Orders
                  where c.Country == EnumCountries.Egypt
-                 select o).Union(from c in customers 
+                 select o).Union(from c in customers
                                  from o in c.Orders
-                                 where c.Country==EnumCountries.Kuwait
+                                 where c.Country == EnumCountries.Kuwait
                                  select o);
 
             lst.Items.Clear();
@@ -427,8 +427,48 @@ namespace LINQ_Examples
                 lst.Items.Add("ID Product" + "_" + x.ProductID + "-" + "Quantity" + "_" + x.Quantity);
 
             }
-          
+
+        }
+        #endregion
+
+        #region Intersect 
+        //this like match between two items
+        private void Exam_28_Click(object sender, EventArgs e)
+        {
+            var expr =
+              (from c in customers
+               from o in c.Orders
+               where c.Country == EnumCountries.Egypt
+               select o).Intersect(from c in customers
+                                   from o in c.Orders
+                                   where c.Country == EnumCountries.Kuwait
+                                   select o);
+            lst.Items.Clear();
+            foreach (var x in expr)
+            {
+                lst.Items.Add("ID Product" + "_" + x.ProductID + "-" + "Quantity" + "_" + x.Quantity);
+            }
+
+            }
+        #endregion
+        #region Except
+        private void Exam_35_Click(object sender, EventArgs e)
+        {
+            var expr =
+              (from c in customers
+               from o in c.Orders
+               select o).Except(from c in customers
+                                   from o in c.Orders
+                                   where c.City =="Cairo"
+                                   select o);
+            lst.Items.Clear();
+            foreach (var x in expr)
+            {
+                lst.Items.Add("ID Product" + "_" + x.ProductID + "-" + "Quantity" + "_" + x.Quantity);
+            }
         }
         #endregion
     }
+
+
 }
