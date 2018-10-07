@@ -65,7 +65,7 @@
             this.Exam_1.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.Exam_1.Location = new System.Drawing.Point(481, 48);
             this.Exam_1.Name = "Exam_1";
-            this.Exam_1.Size = new System.Drawing.Size(184, 27);
+            this.Exam_1.Size = new System.Drawing.Size(195, 27);
             this.Exam_1.TabIndex = 4;
             this.Exam_1.Text = "* Where 1";
             this.Exam_1.UseVisualStyleBackColor = true;
@@ -85,7 +85,7 @@
             this.Exam_2.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.Exam_2.Location = new System.Drawing.Point(481, 78);
             this.Exam_2.Name = "Exam_2";
-            this.Exam_2.Size = new System.Drawing.Size(184, 27);
+            this.Exam_2.Size = new System.Drawing.Size(195, 27);
             this.Exam_2.TabIndex = 5;
             this.Exam_2.Text = "Where 2";
             this.Exam_2.UseVisualStyleBackColor = true;
@@ -96,7 +96,7 @@
             this.Exam_4.ForeColor = System.Drawing.Color.Crimson;
             this.Exam_4.Location = new System.Drawing.Point(481, 144);
             this.Exam_4.Name = "Exam_4";
-            this.Exam_4.Size = new System.Drawing.Size(184, 27);
+            this.Exam_4.Size = new System.Drawing.Size(195, 27);
             this.Exam_4.TabIndex = 7;
             this.Exam_4.Text = "Select 1";
             this.Exam_4.UseVisualStyleBackColor = true;
@@ -107,7 +107,7 @@
             this.Exam_3.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.Exam_3.Location = new System.Drawing.Point(481, 111);
             this.Exam_3.Name = "Exam_3";
-            this.Exam_3.Size = new System.Drawing.Size(184, 27);
+            this.Exam_3.Size = new System.Drawing.Size(195, 27);
             this.Exam_3.TabIndex = 6;
             this.Exam_3.Text = "Where 3";
             this.Exam_3.UseVisualStyleBackColor = true;
@@ -118,7 +118,7 @@
             this.Exam_8.ForeColor = System.Drawing.Color.DarkBlue;
             this.Exam_8.Location = new System.Drawing.Point(481, 276);
             this.Exam_8.Name = "Exam_8";
-            this.Exam_8.Size = new System.Drawing.Size(184, 27);
+            this.Exam_8.Size = new System.Drawing.Size(195, 27);
             this.Exam_8.TabIndex = 11;
             this.Exam_8.Text = "* Select Many 2";
             this.Exam_8.UseVisualStyleBackColor = true;
@@ -129,7 +129,7 @@
             this.Exam_7.ForeColor = System.Drawing.Color.DarkBlue;
             this.Exam_7.Location = new System.Drawing.Point(481, 243);
             this.Exam_7.Name = "Exam_7";
-            this.Exam_7.Size = new System.Drawing.Size(184, 27);
+            this.Exam_7.Size = new System.Drawing.Size(195, 27);
             this.Exam_7.TabIndex = 10;
             this.Exam_7.Text = "Select Many 1";
             this.Exam_7.UseVisualStyleBackColor = true;
@@ -140,7 +140,7 @@
             this.Exam_6.ForeColor = System.Drawing.Color.Crimson;
             this.Exam_6.Location = new System.Drawing.Point(481, 210);
             this.Exam_6.Name = "Exam_6";
-            this.Exam_6.Size = new System.Drawing.Size(184, 27);
+            this.Exam_6.Size = new System.Drawing.Size(195, 27);
             this.Exam_6.TabIndex = 9;
             this.Exam_6.Text = "Select 3";
             this.Exam_6.UseVisualStyleBackColor = true;
@@ -151,7 +151,7 @@
             this.Exam_5.ForeColor = System.Drawing.Color.Crimson;
             this.Exam_5.Location = new System.Drawing.Point(481, 177);
             this.Exam_5.Name = "Exam_5";
-            this.Exam_5.Size = new System.Drawing.Size(184, 27);
+            this.Exam_5.Size = new System.Drawing.Size(195, 27);
             this.Exam_5.TabIndex = 8;
             this.Exam_5.Text = "Select 2";
             this.Exam_5.UseVisualStyleBackColor = true;
@@ -162,7 +162,7 @@
             this.Exam_12.ForeColor = System.Drawing.Color.DarkCyan;
             this.Exam_12.Location = new System.Drawing.Point(481, 408);
             this.Exam_12.Name = "Exam_12";
-            this.Exam_12.Size = new System.Drawing.Size(184, 27);
+            this.Exam_12.Size = new System.Drawing.Size(195, 27);
             this.Exam_12.TabIndex = 15;
             this.Exam_12.Text = "Orderby Descending 2";
             this.Exam_12.UseVisualStyleBackColor = true;
@@ -173,7 +173,7 @@
             this.Exam_11.ForeColor = System.Drawing.Color.DarkCyan;
             this.Exam_11.Location = new System.Drawing.Point(481, 375);
             this.Exam_11.Name = "Exam_11";
-            this.Exam_11.Size = new System.Drawing.Size(184, 27);
+            this.Exam_11.Size = new System.Drawing.Size(195, 27);
             this.Exam_11.TabIndex = 14;
             this.Exam_11.Text = "* Orderby 1";
             this.Exam_11.UseVisualStyleBackColor = true;
@@ -184,7 +184,7 @@
             this.Exam_10.ForeColor = System.Drawing.Color.DarkBlue;
             this.Exam_10.Location = new System.Drawing.Point(481, 342);
             this.Exam_10.Name = "Exam_10";
-            this.Exam_10.Size = new System.Drawing.Size(184, 27);
+            this.Exam_10.Size = new System.Drawing.Size(195, 27);
             this.Exam_10.TabIndex = 13;
             this.Exam_10.Text = "* Select Many 4";
             this.Exam_10.UseVisualStyleBackColor = true;
@@ -195,7 +195,7 @@
             this.Exam_9.ForeColor = System.Drawing.Color.DarkBlue;
             this.Exam_9.Location = new System.Drawing.Point(481, 309);
             this.Exam_9.Name = "Exam_9";
-            this.Exam_9.Size = new System.Drawing.Size(184, 27);
+            this.Exam_9.Size = new System.Drawing.Size(195, 27);
             this.Exam_9.TabIndex = 12;
             this.Exam_9.Text = "Select Many 3";
             this.Exam_9.UseVisualStyleBackColor = true;
@@ -239,7 +239,7 @@
             this.Exam_13.ForeColor = System.Drawing.Color.Coral;
             this.Exam_13.Location = new System.Drawing.Point(481, 441);
             this.Exam_13.Name = "Exam_13";
-            this.Exam_13.Size = new System.Drawing.Size(184, 27);
+            this.Exam_13.Size = new System.Drawing.Size(195, 27);
             this.Exam_13.TabIndex = 16;
             this.Exam_13.Text = "ThenBy 1";
             this.Exam_13.UseVisualStyleBackColor = true;
@@ -293,8 +293,9 @@
             this.Exam_24.Name = "Exam_24";
             this.Exam_24.Size = new System.Drawing.Size(150, 27);
             this.Exam_24.TabIndex = 27;
-            this.Exam_24.Text = "Join 2";
+            this.Exam_24.Text = "Distinct 1\r\n";
             this.Exam_24.UseVisualStyleBackColor = true;
+            this.Exam_24.Click += new System.EventHandler(this.Exam_24_Click);
             // 
             // Exam_23
             // 
@@ -353,8 +354,9 @@
             this.Exam_26.Name = "Exam_26";
             this.Exam_26.Size = new System.Drawing.Size(150, 27);
             this.Exam_26.TabIndex = 29;
-            this.Exam_26.Text = "GroupBy 2";
+            this.Exam_26.Text = "Union 1";
             this.Exam_26.UseVisualStyleBackColor = true;
+            this.Exam_26.Click += new System.EventHandler(this.Exam_26_Click);
             // 
             // Exam_25
             // 
@@ -363,8 +365,9 @@
             this.Exam_25.Name = "Exam_25";
             this.Exam_25.Size = new System.Drawing.Size(150, 27);
             this.Exam_25.TabIndex = 28;
-            this.Exam_25.Text = "GroupBy 1";
+            this.Exam_25.Text = "* Distinct 2";
             this.Exam_25.UseVisualStyleBackColor = true;
+            this.Exam_25.Click += new System.EventHandler(this.Exam_25_Click);
             // 
             // label1
             // 
@@ -373,15 +376,15 @@
             this.label1.ForeColor = System.Drawing.Color.Coral;
             this.label1.Location = new System.Drawing.Point(257, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(153, 25);
+            this.label1.Size = new System.Drawing.Size(168, 25);
             this.label1.TabIndex = 32;
-            this.label1.Text = "LINQ   Toturial";
+            this.label1.Text = "LINQ   Toturial *";
             // 
             // Example3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(688, 579);
+            this.ClientSize = new System.Drawing.Size(688, 693);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Exam_28);
             this.Controls.Add(this.Exam_27);

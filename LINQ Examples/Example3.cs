@@ -366,7 +366,41 @@ namespace LINQ_Examples
                 foreach (var orders in item.ord)
                     lst.Items.Add("       Qty" + orders.Quantity + "- Month" + orders.Month);
             }
-            #endregion
+          
+        }
+        #endregion
+
+        #region Distinct
+        private void Exam_24_Click(object sender, EventArgs e)
+        {
+            var expr = customers
+                .SelectMany(c => c.Orders)
+                .Join(prodeucts, o => o.ProductID, p => p.IdProduct, (o, p) => p).Distinct();
+            lst.Items.Clear();
+            foreach (var x in expr)
+            {
+                lst.Items.Add("ID Product"+"_"+x.IdProduct+"-"+"Price"+"_"+x.Price);
+                 
+            }
+        }
+
+        private void Exam_25_Click(object sender, EventArgs e)
+        {
+            var expr = ( from c in customers
+                       from o in c.Orders
+                       join p in prodeucts
+                       on o.ProductID equals p.IdProduct
+                       select p).Distinct();
+            lst.Items.Clear();
+            foreach (var x in expr)
+            {
+                lst.Items.Add("ID Product" + "_" + x.IdProduct + "-" + "Price" + "_" + x.Price);
+            }
+        }
+        #endregion
+        private void Exam_26_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
