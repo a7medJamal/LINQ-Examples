@@ -11,14 +11,14 @@ namespace LINQ_Examples
         public int Quantity { get; set; }
         public bool Shipped { get; set; }
         public int Month { get; set; }
-        public Product Products { get; set; }
+        public int ProductID { get; set; }
         
-        public Order(int quantity,bool shipped,int month,Product product)
+        public Order(int quantity,bool shipped,int month,int product)
         {
             this.Quantity = quantity;
             this.Shipped = shipped;
             this.Month = month;
-            this.Products = product;
+            this.ProductID = product;
         }
     }
 }

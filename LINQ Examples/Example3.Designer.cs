@@ -47,6 +47,16 @@
             this.Exam_13 = new System.Windows.Forms.Button();
             this.Exam_18 = new System.Windows.Forms.Button();
             this.Exam_17 = new System.Windows.Forms.Button();
+            this.Exam_20 = new System.Windows.Forms.Button();
+            this.Exam_19 = new System.Windows.Forms.Button();
+            this.Exam_24 = new System.Windows.Forms.Button();
+            this.Exam_23 = new System.Windows.Forms.Button();
+            this.Exam_22 = new System.Windows.Forms.Button();
+            this.Exam_21 = new System.Windows.Forms.Button();
+            this.Exam_28 = new System.Windows.Forms.Button();
+            this.Exam_27 = new System.Windows.Forms.Button();
+            this.Exam_26 = new System.Windows.Forms.Button();
+            this.Exam_25 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Exam_1
@@ -236,27 +246,137 @@
             // 
             // Exam_18
             // 
-            this.Exam_18.Location = new System.Drawing.Point(515, 595);
+            this.Exam_18.ForeColor = System.Drawing.Color.DarkGoldenrod;
+            this.Exam_18.Location = new System.Drawing.Point(325, 496);
             this.Exam_18.Name = "Exam_18";
             this.Exam_18.Size = new System.Drawing.Size(150, 27);
             this.Exam_18.TabIndex = 21;
-            this.Exam_18.Text = "Select Many 2";
+            this.Exam_18.Text = "GroupBy 2";
             this.Exam_18.UseVisualStyleBackColor = true;
+            this.Exam_18.Click += new System.EventHandler(this.Exam_18_Click);
             // 
             // Exam_17
             // 
-            this.Exam_17.Location = new System.Drawing.Point(515, 562);
+            this.Exam_17.ForeColor = System.Drawing.Color.DarkGoldenrod;
+            this.Exam_17.Location = new System.Drawing.Point(325, 463);
             this.Exam_17.Name = "Exam_17";
             this.Exam_17.Size = new System.Drawing.Size(150, 27);
             this.Exam_17.TabIndex = 20;
-            this.Exam_17.Text = "Select Many 1";
+            this.Exam_17.Text = "GroupBy 1";
             this.Exam_17.UseVisualStyleBackColor = true;
+            this.Exam_17.Click += new System.EventHandler(this.Exam_17_Click);
+            // 
+            // Exam_20
+            // 
+            this.Exam_20.Location = new System.Drawing.Point(325, 562);
+            this.Exam_20.Name = "Exam_20";
+            this.Exam_20.Size = new System.Drawing.Size(150, 27);
+            this.Exam_20.TabIndex = 23;
+            this.Exam_20.Text = "Join 2";
+            this.Exam_20.UseVisualStyleBackColor = true;
+            this.Exam_20.Click += new System.EventHandler(this.Exam_20_Click);
+            // 
+            // Exam_19
+            // 
+            this.Exam_19.Location = new System.Drawing.Point(325, 529);
+            this.Exam_19.Name = "Exam_19";
+            this.Exam_19.Size = new System.Drawing.Size(150, 27);
+            this.Exam_19.TabIndex = 22;
+            this.Exam_19.Text = "Join 1";
+            this.Exam_19.UseVisualStyleBackColor = true;
+            this.Exam_19.Click += new System.EventHandler(this.Exam_19_Click);
+            // 
+            // Exam_24
+            // 
+            this.Exam_24.Location = new System.Drawing.Point(169, 562);
+            this.Exam_24.Name = "Exam_24";
+            this.Exam_24.Size = new System.Drawing.Size(150, 27);
+            this.Exam_24.TabIndex = 27;
+            this.Exam_24.Text = "Join 2";
+            this.Exam_24.UseVisualStyleBackColor = true;
+            // 
+            // Exam_23
+            // 
+            this.Exam_23.Location = new System.Drawing.Point(169, 529);
+            this.Exam_23.Name = "Exam_23";
+            this.Exam_23.Size = new System.Drawing.Size(150, 27);
+            this.Exam_23.TabIndex = 26;
+            this.Exam_23.Text = "Join 1";
+            this.Exam_23.UseVisualStyleBackColor = true;
+            // 
+            // Exam_22
+            // 
+            this.Exam_22.ForeColor = System.Drawing.Color.DarkGoldenrod;
+            this.Exam_22.Location = new System.Drawing.Point(169, 496);
+            this.Exam_22.Name = "Exam_22";
+            this.Exam_22.Size = new System.Drawing.Size(150, 27);
+            this.Exam_22.TabIndex = 25;
+            this.Exam_22.Text = "GroupBy 2";
+            this.Exam_22.UseVisualStyleBackColor = true;
+            // 
+            // Exam_21
+            // 
+            this.Exam_21.ForeColor = System.Drawing.Color.DarkGoldenrod;
+            this.Exam_21.Location = new System.Drawing.Point(169, 463);
+            this.Exam_21.Name = "Exam_21";
+            this.Exam_21.Size = new System.Drawing.Size(150, 27);
+            this.Exam_21.TabIndex = 24;
+            this.Exam_21.Text = "GroupBy 1";
+            this.Exam_21.UseVisualStyleBackColor = true;
+            // 
+            // Exam_28
+            // 
+            this.Exam_28.Location = new System.Drawing.Point(13, 562);
+            this.Exam_28.Name = "Exam_28";
+            this.Exam_28.Size = new System.Drawing.Size(150, 27);
+            this.Exam_28.TabIndex = 31;
+            this.Exam_28.Text = "Join 2";
+            this.Exam_28.UseVisualStyleBackColor = true;
+            // 
+            // Exam_27
+            // 
+            this.Exam_27.Location = new System.Drawing.Point(13, 529);
+            this.Exam_27.Name = "Exam_27";
+            this.Exam_27.Size = new System.Drawing.Size(150, 27);
+            this.Exam_27.TabIndex = 30;
+            this.Exam_27.Text = "Join 1";
+            this.Exam_27.UseVisualStyleBackColor = true;
+            // 
+            // Exam_26
+            // 
+            this.Exam_26.ForeColor = System.Drawing.Color.DarkGoldenrod;
+            this.Exam_26.Location = new System.Drawing.Point(13, 496);
+            this.Exam_26.Name = "Exam_26";
+            this.Exam_26.Size = new System.Drawing.Size(150, 27);
+            this.Exam_26.TabIndex = 29;
+            this.Exam_26.Text = "GroupBy 2";
+            this.Exam_26.UseVisualStyleBackColor = true;
+            // 
+            // Exam_25
+            // 
+            this.Exam_25.ForeColor = System.Drawing.Color.DarkGoldenrod;
+            this.Exam_25.Location = new System.Drawing.Point(13, 463);
+            this.Exam_25.Name = "Exam_25";
+            this.Exam_25.Size = new System.Drawing.Size(150, 27);
+            this.Exam_25.TabIndex = 28;
+            this.Exam_25.Text = "GroupBy 1";
+            this.Exam_25.UseVisualStyleBackColor = true;
             // 
             // Example3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(677, 649);
+            this.ClientSize = new System.Drawing.Size(677, 597);
+            this.Controls.Add(this.Exam_28);
+            this.Controls.Add(this.Exam_27);
+            this.Controls.Add(this.Exam_26);
+            this.Controls.Add(this.Exam_25);
+            this.Controls.Add(this.Exam_24);
+            this.Controls.Add(this.Exam_23);
+            this.Controls.Add(this.Exam_22);
+            this.Controls.Add(this.Exam_21);
+            this.Controls.Add(this.Exam_20);
+            this.Controls.Add(this.Exam_19);
             this.Controls.Add(this.Exam_18);
             this.Controls.Add(this.Exam_17);
             this.Controls.Add(this.Exam_16);
@@ -307,5 +427,15 @@
         private System.Windows.Forms.Button Exam_13;
         private System.Windows.Forms.Button Exam_18;
         private System.Windows.Forms.Button Exam_17;
+        private System.Windows.Forms.Button Exam_20;
+        private System.Windows.Forms.Button Exam_19;
+        private System.Windows.Forms.Button Exam_24;
+        private System.Windows.Forms.Button Exam_23;
+        private System.Windows.Forms.Button Exam_22;
+        private System.Windows.Forms.Button Exam_21;
+        private System.Windows.Forms.Button Exam_28;
+        private System.Windows.Forms.Button Exam_27;
+        private System.Windows.Forms.Button Exam_26;
+        private System.Windows.Forms.Button Exam_25;
     }
 }
