@@ -344,8 +344,9 @@
             this.Exam_27.Name = "Exam_27";
             this.Exam_27.Size = new System.Drawing.Size(150, 27);
             this.Exam_27.TabIndex = 30;
-            this.Exam_27.Text = "Join 1";
+            this.Exam_27.Text = "* Union 2";
             this.Exam_27.UseVisualStyleBackColor = true;
+            this.Exam_27.Click += new System.EventHandler(this.Exam_27_Click);
             // 
             // Exam_26
             // 

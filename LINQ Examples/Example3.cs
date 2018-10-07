@@ -398,9 +398,37 @@ namespace LINQ_Examples
             }
         }
         #endregion
+        #region Union
         private void Exam_26_Click(object sender, EventArgs e)
         {
+            var expr = customers[1].Orders.Union(customers[2].Orders).Distinct();
+            lst.Items.Clear();
+            foreach (var x in expr)
+            {
+                lst.Items.Add("ID Product" + "_" + x.ProductID + "-" + "Quantity" + "_" + x.Quantity);
 
+            }
         }
+
+        private void Exam_27_Click(object sender, EventArgs e)
+        {
+            var expr =
+                (from c in customers
+                 from o in c.Orders
+                 where c.Country == EnumCountries.Egypt
+                 select o).Union(from c in customers 
+                                 from o in c.Orders
+                                 where c.Country==EnumCountries.Kuwait
+                                 select o);
+
+            lst.Items.Clear();
+            foreach (var x in expr)
+            {
+                lst.Items.Add("ID Product" + "_" + x.ProductID + "-" + "Quantity" + "_" + x.Quantity);
+
+            }
+          
+        }
+        #endregion
     }
 }
