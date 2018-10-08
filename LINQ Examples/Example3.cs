@@ -449,7 +449,7 @@ namespace LINQ_Examples
                 lst.Items.Add("ID Product" + "_" + x.ProductID + "-" + "Quantity" + "_" + x.Quantity);
             }
 
-            }
+        }
         #endregion
 
         #region Except
@@ -459,9 +459,9 @@ namespace LINQ_Examples
               (from c in customers
                from o in c.Orders
                select o).Except(from c in customers
-                                   from o in c.Orders
-                                   where c.City =="Cairo"
-                                   select o);
+                                from o in c.Orders
+                                where c.City == "Cairo"
+                                select o);
             lst.Items.Clear();
             foreach (var x in expr)
             {
@@ -475,7 +475,7 @@ namespace LINQ_Examples
         {
             // you can use LongCount for big numbers
             var expr = from c in customers
-                       select new { c.Name, c.City, c.Country,OrderCount= c.Orders.Count() };
+                       select new { c.Name, c.City, c.Country, OrderCount = c.Orders.Count() };
             lst.Items.Clear();
             foreach (var x in expr)
             {
@@ -490,7 +490,7 @@ namespace LINQ_Examples
             int[] values = { 1, 5, 98, 12 };
             int total = values.Sum();
             lst.Items.Clear();
-            lst.Items.Add("Sum="+total);
+            lst.Items.Add("Sum=" + total);
         }
 
         private void Exam_31_Click(object sender, EventArgs e)
@@ -499,10 +499,10 @@ namespace LINQ_Examples
                 from c in customers
                 from o in c.Orders
                 join p in prodeucts on o.ProductID equals p.IdProduct
-                select new { c.Name, Amount =o.Quantity*p.Price };
+                select new { c.Name, Amount = o.Quantity * p.Price };
             var expr = from c in customers
                        join o in orders on c.Name equals o.Name into CustOrders
-                       select new { c.Name, Amount = CustOrders.Sum(o=>o.Amount) };
+                       select new { c.Name, Amount = CustOrders.Sum(o => o.Amount) };
             var expr2 = orders.Union(expr);
 
             lst.Items.Clear();
@@ -542,8 +542,8 @@ namespace LINQ_Examples
                         from o in c.Orders
                         select o.Quantity).Min();
             lst.Items.Clear();
-                lst.Items.Add("Min Quantity="+expr);
-            
+            lst.Items.Add("Min Quantity=" + expr);
+
         }
 
         private void Exam_34_Click(object sender, EventArgs e)
@@ -571,7 +571,7 @@ namespace LINQ_Examples
         private void Exam_37_Click(object sender, EventArgs e)
         {
             var expr = (from p in prodeucts
-                        select new { p.Price }).Average(p=>p.Price);
+                        select new { p.Price }).Average(p => p.Price);
             lst.Items.Clear();
             lst.Items.Add("Average Quantity=" + expr);
         }
@@ -585,12 +585,63 @@ namespace LINQ_Examples
                                   select new { c.Name, orderamount = o.Quantity * p.Price }
                                     ) on c.Name equals o.Name
                                     into CustWithOrders
-                       select new { c.Name, AvargAmount=CustWithOrders.Average(o => o.orderamount) };
+                       select new { c.Name, AvargAmount = CustWithOrders.Average(o => o.orderamount) };
 
             lst.Items.Clear();
-            foreach(var x in expr)
-            { 
-            lst.Items.Add( x.Name +"(" +x.AvargAmount +")");
+            foreach (var x in expr)
+            {
+                lst.Items.Add(x.Name + "(" + x.AvargAmount + ")");
+            }
+        }
+        #endregion
+        #region Aggregate
+        private void Exam_38_Click(object sender, EventArgs e)
+        {
+            var expr = from p in prodeucts
+                       join o in (from c in customers
+                                  from o in c.Orders
+                                  join p in prodeucts on o.ProductID equals p.IdProduct
+                                  select new { p.IdProduct, OrdersAmount = o.Quantity * p.Price }) on p.IdProduct equals o.IdProduct into orders
+                       select new { p.IdProduct, TotalAmount = orders.Aggregate(0m, (a, o) => a += o.OrdersAmount) };
+
+            lst.Items.Clear();
+            foreach (var x in expr)
+            {
+                lst.Items.Add("ID" + x.IdProduct + "-" + "(" + x.TotalAmount + ")");
+            }
+        }
+
+        
+        private void Exam_41_Click(object sender, EventArgs e)
+        {
+            var expr = from c in customers
+                       join o in (from c in customers
+                                  from o in c.Orders
+                                  join p in prodeucts on o.ProductID equals p.IdProduct
+                                  select new { c.Name, p.IdProduct, OrdersAmount = o.Quantity * p.Price }) on c.Name equals o.Name into orders
+                       select new { c.Name, MaxOrderAmount = orders.Aggregate( (t, s) =>( t.OrdersAmount > s.OrdersAmount) ? t : s  ).OrdersAmount  };
+
+            lst.Items.Clear();
+            foreach (var x in expr)
+            {
+                lst.Items.Add("Name" + x.Name + "-" + "(" + x.MaxOrderAmount + ")");
+            }
+        }
+
+        private void Exam_39_Click(object sender, EventArgs e)
+        {
+            var expr = from c in customers
+                       join o in (from c in customers
+                                  from o in c.Orders
+                                  join p in prodeucts on o.ProductID equals p.IdProduct
+                                  select new { c.Name,o.Month, p.IdProduct, OrdersAmount = o.Quantity * p.Price }) on c.Name equals o.Name into orders
+                       select new { c.Name, MaxOrder = orders.Aggregate(new { Amount = 0m, month = "" }, 
+                       (t, s) =>(t.Amount > s.OrdersAmount) ? t : new { Amount = s.OrdersAmount, month = s.Month.ToString() }) } ;
+
+            lst.Items.Clear();
+            foreach (var x in expr)
+            {
+                lst.Items.Add("Name-" + x.Name + "Max Order-" + "(" + x.MaxOrder.month + ")");
             }
         }
         #endregion

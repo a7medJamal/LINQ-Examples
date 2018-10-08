@@ -89,6 +89,7 @@
             // lst
             // 
             this.lst.FormattingEnabled = true;
+            this.lst.HorizontalScrollbar = true;
             this.lst.ItemHeight = 16;
             this.lst.Location = new System.Drawing.Point(12, 48);
             this.lst.Name = "lst";
@@ -397,9 +398,9 @@
             this.label1.ForeColor = System.Drawing.Color.Coral;
             this.label1.Location = new System.Drawing.Point(257, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(168, 25);
+            this.label1.Size = new System.Drawing.Size(162, 25);
             this.label1.TabIndex = 32;
-            this.label1.Text = "LINQ   Toturial *";
+            this.label1.Text = "LINQ  Toturial *";
             // 
             // Exam_35
             // 
@@ -531,8 +532,9 @@
             this.Exam_39.Name = "Exam_39";
             this.Exam_39.Size = new System.Drawing.Size(150, 27);
             this.Exam_39.TabIndex = 46;
-            this.Exam_39.Text = "* Min 1";
+            this.Exam_39.Text = "* Aggregate 3";
             this.Exam_39.UseVisualStyleBackColor = true;
+            this.Exam_39.Click += new System.EventHandler(this.Exam_39_Click);
             // 
             // Exam_41
             // 
@@ -540,8 +542,9 @@
             this.Exam_41.Name = "Exam_41";
             this.Exam_41.Size = new System.Drawing.Size(150, 27);
             this.Exam_41.TabIndex = 45;
-            this.Exam_41.Text = "* Sum 2";
+            this.Exam_41.Text = "* Aggregate 2";
             this.Exam_41.UseVisualStyleBackColor = true;
+            this.Exam_41.Click += new System.EventHandler(this.Exam_41_Click);
             // 
             // Exam_38
             // 
@@ -550,8 +553,9 @@
             this.Exam_38.Name = "Exam_38";
             this.Exam_38.Size = new System.Drawing.Size(150, 27);
             this.Exam_38.TabIndex = 44;
-            this.Exam_38.Text = "* Sum 1";
+            this.Exam_38.Text = "* Aggregate 1";
             this.Exam_38.UseVisualStyleBackColor = true;
+            this.Exam_38.Click += new System.EventHandler(this.Exam_38_Click);
             // 
             // Example3
             // 
