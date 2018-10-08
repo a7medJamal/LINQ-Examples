@@ -1,6 +1,9 @@
 
 # LINQ Tutorial
 
+# How to See ٍSource Code Faster
+![linq](https://user-images.githubusercontent.com/12755564/46605743-405d5900-cb03-11e8-9e26-64f19aa3481d.gif)
+
 # The Where Operator
 # Projection Operatators
      -Select
@@ -34,5 +37,3 @@
        -Average
        -Aggregate
 
-# How to See ٍSource Code Faster
-![linq](https://user-images.githubusercontent.com/12755564/46605743-405d5900-cb03-11e8-9e26-64f19aa3481d.gif)
