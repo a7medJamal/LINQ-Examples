@@ -483,6 +483,37 @@ namespace LINQ_Examples
             }
         }
         #endregion
+
+        #region Sum 
+        private void Exam_30_Click(object sender, EventArgs e)
+        {
+            int[] values = { 1, 5, 98, 12 };
+            int total = values.Sum();
+            lst.Items.Clear();
+            lst.Items.Add("Sum="+total);
+        }
+
+        private void Exam_31_Click(object sender, EventArgs e)
+        {
+            var orders =
+                from c in customers
+                from o in c.Orders
+                join p in prodeucts on o.ProductID equals p.IdProduct
+                select new { c.Name, Amount =o.Quantity*p.Price };
+            var expr = from c in customers
+                       join o in orders on c.Name equals o.Name into CustOrders
+                       select new { c.Name, Amount = CustOrders.Sum(o=>o.Amount) };
+            var expr2 = orders.Union(expr);
+
+            lst.Items.Clear();
+            foreach (var x in expr2)
+            {
+                lst.Items.Add("ID " + "_" + x.Name + "-" + "Total=" + "_" + x.Amount);
+            }
+
+
+        }
+        #endregion
     }
 
 

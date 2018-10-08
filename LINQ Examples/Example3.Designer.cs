@@ -412,8 +412,9 @@
             this.Exam_31.Name = "Exam_31";
             this.Exam_31.Size = new System.Drawing.Size(150, 27);
             this.Exam_31.TabIndex = 36;
-            this.Exam_31.Text = "Join 1";
+            this.Exam_31.Text = "* Sum 2";
             this.Exam_31.UseVisualStyleBackColor = true;
+            this.Exam_31.Click += new System.EventHandler(this.Exam_31_Click);
             // 
             // Exam_30
             // 
@@ -422,8 +423,9 @@
             this.Exam_30.Name = "Exam_30";
             this.Exam_30.Size = new System.Drawing.Size(150, 27);
             this.Exam_30.TabIndex = 35;
-            this.Exam_30.Text = "* GroupBy 2";
+            this.Exam_30.Text = "* Sum 1";
             this.Exam_30.UseVisualStyleBackColor = true;
+            this.Exam_30.Click += new System.EventHandler(this.Exam_30_Click);
             // 
             // Exam_29
             // 
