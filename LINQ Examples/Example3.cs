@@ -533,8 +533,30 @@ namespace LINQ_Examples
                 lst.Items.Add("ID " + "_" + x.Name + "-" + "Order Count" + "_" + x.totalAmount);
             }
         }
+        #endregion
+
+        #region Min
+        private void Exam_33_Click(object sender, EventArgs e)
+        {
+            var expr = (from c in customers
+                        from o in c.Orders
+                        select o.Quantity).Min();
+            lst.Items.Clear();
+                lst.Items.Add("Min Quantity="+expr);
+            
+        }
+
+        private void Exam_34_Click(object sender, EventArgs e)
+        {
+            var expr = (from c in customers
+                        from o in c.Orders
+                        select new { o.Quantity }).Min(o=>o.Quantity);
+            lst.Items.Clear();
+            lst.Items.Add("Min Quantity=" + expr);
+        }
+        #endregion
     }
-    #endregion
+
 
 
 }

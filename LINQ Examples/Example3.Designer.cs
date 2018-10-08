@@ -444,8 +444,9 @@
             this.Exam_34.Name = "Exam_34";
             this.Exam_34.Size = new System.Drawing.Size(150, 27);
             this.Exam_34.TabIndex = 40;
-            this.Exam_34.Text = "Join 1";
+            this.Exam_34.Text = "* Min 2";
             this.Exam_34.UseVisualStyleBackColor = true;
+            this.Exam_34.Click += new System.EventHandler(this.Exam_34_Click);
             // 
             // Exam_33
             // 
@@ -454,8 +455,9 @@
             this.Exam_33.Name = "Exam_33";
             this.Exam_33.Size = new System.Drawing.Size(150, 27);
             this.Exam_33.TabIndex = 39;
-            this.Exam_33.Text = "* GroupBy 2";
+            this.Exam_33.Text = "* Min 1";
             this.Exam_33.UseVisualStyleBackColor = true;
+            this.Exam_33.Click += new System.EventHandler(this.Exam_33_Click);
             // 
             // Exam_32
             // 
