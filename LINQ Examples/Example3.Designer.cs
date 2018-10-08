@@ -67,9 +67,7 @@
             this.Exam_32 = new System.Windows.Forms.Button();
             this.Exam_37 = new System.Windows.Forms.Button();
             this.Exam_36 = new System.Windows.Forms.Button();
-            this.Exam_43 = new System.Windows.Forms.Button();
             this.Exam_40 = new System.Windows.Forms.Button();
-            this.Exam_42 = new System.Windows.Forms.Button();
             this.Exam_39 = new System.Windows.Forms.Button();
             this.Exam_41 = new System.Windows.Forms.Button();
             this.Exam_38 = new System.Windows.Forms.Button();
@@ -497,15 +495,6 @@
             this.Exam_36.UseVisualStyleBackColor = true;
             this.Exam_36.Click += new System.EventHandler(this.Exam_36_Click);
             // 
-            // Exam_43
-            // 
-            this.Exam_43.Location = new System.Drawing.Point(12, 659);
-            this.Exam_43.Name = "Exam_43";
-            this.Exam_43.Size = new System.Drawing.Size(150, 27);
-            this.Exam_43.TabIndex = 49;
-            this.Exam_43.Text = "* Average";
-            this.Exam_43.UseVisualStyleBackColor = true;
-            // 
             // Exam_40
             // 
             this.Exam_40.Location = new System.Drawing.Point(12, 626);
@@ -515,15 +504,6 @@
             this.Exam_40.Text = "* Average 2";
             this.Exam_40.UseVisualStyleBackColor = true;
             this.Exam_40.Click += new System.EventHandler(this.Exam_40_Click);
-            // 
-            // Exam_42
-            // 
-            this.Exam_42.Location = new System.Drawing.Point(168, 659);
-            this.Exam_42.Name = "Exam_42";
-            this.Exam_42.Size = new System.Drawing.Size(150, 27);
-            this.Exam_42.TabIndex = 47;
-            this.Exam_42.Text = "* Min 2";
-            this.Exam_42.UseVisualStyleBackColor = true;
             // 
             // Exam_39
             // 
@@ -562,9 +542,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(688, 710);
-            this.Controls.Add(this.Exam_43);
             this.Controls.Add(this.Exam_40);
-            this.Controls.Add(this.Exam_42);
             this.Controls.Add(this.Exam_39);
             this.Controls.Add(this.Exam_41);
             this.Controls.Add(this.Exam_38);
@@ -659,9 +637,7 @@
         private System.Windows.Forms.Button Exam_32;
         private System.Windows.Forms.Button Exam_37;
         private System.Windows.Forms.Button Exam_36;
-        private System.Windows.Forms.Button Exam_43;
         private System.Windows.Forms.Button Exam_40;
-        private System.Windows.Forms.Button Exam_42;
         private System.Windows.Forms.Button Exam_39;
         private System.Windows.Forms.Button Exam_41;
         private System.Windows.Forms.Button Exam_38;
