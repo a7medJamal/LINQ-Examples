@@ -432,8 +432,9 @@
             this.Exam_29.Name = "Exam_29";
             this.Exam_29.Size = new System.Drawing.Size(150, 27);
             this.Exam_29.TabIndex = 34;
-            this.Exam_29.Text = "Count";
+            this.Exam_29.Text = "* Count";
             this.Exam_29.UseVisualStyleBackColor = true;
+            this.Exam_29.Click += new System.EventHandler(this.Exam_29_Click);
             // 
             // Exam_34
             // 

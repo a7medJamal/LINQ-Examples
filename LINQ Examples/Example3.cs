@@ -451,6 +451,7 @@ namespace LINQ_Examples
 
             }
         #endregion
+
         #region Except
         private void Exam_35_Click(object sender, EventArgs e)
         {
@@ -465,6 +466,20 @@ namespace LINQ_Examples
             foreach (var x in expr)
             {
                 lst.Items.Add("ID Product" + "_" + x.ProductID + "-" + "Quantity" + "_" + x.Quantity);
+            }
+        }
+        #endregion
+
+        #region Count ,LongCount
+        private void Exam_29_Click(object sender, EventArgs e)
+        {
+            // you can use LongCount for big numbers
+            var expr = from c in customers
+                       select new { c.Name, c.City, c.Country,OrderCount= c.Orders.Count() };
+            lst.Items.Clear();
+            foreach (var x in expr)
+            {
+                lst.Items.Add("ID " + "_" + x.Name + "-" + "Order Count" + "_" + x.OrderCount);
             }
         }
         #endregion
