@@ -550,7 +550,18 @@ namespace LINQ_Examples
         {
             var expr = (from c in customers
                         from o in c.Orders
-                        select new { o.Quantity }).Min(o=>o.Quantity);
+                        select new { o.Quantity }).Min(o => o.Quantity);
+            lst.Items.Clear();
+            lst.Items.Add("Min Quantity=" + expr);
+        }
+        #endregion
+
+        #region Max
+        private void Exam_36_Click(object sender, EventArgs e)
+        {
+            var expr = (from c in customers
+                        from o in c.Orders
+                        select new { o.Quantity }).Max(o => o.Quantity);
             lst.Items.Clear();
             lst.Items.Add("Min Quantity=" + expr);
         }

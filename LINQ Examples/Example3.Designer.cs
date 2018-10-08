@@ -485,8 +485,9 @@
             this.Exam_36.Name = "Exam_36";
             this.Exam_36.Size = new System.Drawing.Size(150, 27);
             this.Exam_36.TabIndex = 42;
-            this.Exam_36.Text = "* Union 2";
+            this.Exam_36.Text = "* Max";
             this.Exam_36.UseVisualStyleBackColor = true;
+            this.Exam_36.Click += new System.EventHandler(this.Exam_36_Click);
             // 
             // Example3
             // 
