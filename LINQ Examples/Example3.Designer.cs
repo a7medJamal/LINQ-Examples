@@ -67,6 +67,12 @@
             this.Exam_32 = new System.Windows.Forms.Button();
             this.Exam_37 = new System.Windows.Forms.Button();
             this.Exam_36 = new System.Windows.Forms.Button();
+            this.Exam_43 = new System.Windows.Forms.Button();
+            this.Exam_40 = new System.Windows.Forms.Button();
+            this.Exam_42 = new System.Windows.Forms.Button();
+            this.Exam_39 = new System.Windows.Forms.Button();
+            this.Exam_41 = new System.Windows.Forms.Button();
+            this.Exam_38 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Exam_1
@@ -86,7 +92,7 @@
             this.lst.ItemHeight = 16;
             this.lst.Location = new System.Drawing.Point(12, 48);
             this.lst.Name = "lst";
-            this.lst.Size = new System.Drawing.Size(446, 372);
+            this.lst.Size = new System.Drawing.Size(446, 340);
             this.lst.TabIndex = 3;
             // 
             // Exam_2
@@ -257,7 +263,7 @@
             // Exam_18
             // 
             this.Exam_18.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.Exam_18.Location = new System.Drawing.Point(325, 474);
+            this.Exam_18.Location = new System.Drawing.Point(325, 429);
             this.Exam_18.Name = "Exam_18";
             this.Exam_18.Size = new System.Drawing.Size(150, 27);
             this.Exam_18.TabIndex = 21;
@@ -268,7 +274,7 @@
             // Exam_17
             // 
             this.Exam_17.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.Exam_17.Location = new System.Drawing.Point(325, 441);
+            this.Exam_17.Location = new System.Drawing.Point(325, 396);
             this.Exam_17.Name = "Exam_17";
             this.Exam_17.Size = new System.Drawing.Size(150, 27);
             this.Exam_17.TabIndex = 20;
@@ -278,7 +284,7 @@
             // 
             // Exam_20
             // 
-            this.Exam_20.Location = new System.Drawing.Point(325, 540);
+            this.Exam_20.Location = new System.Drawing.Point(325, 495);
             this.Exam_20.Name = "Exam_20";
             this.Exam_20.Size = new System.Drawing.Size(150, 27);
             this.Exam_20.TabIndex = 23;
@@ -288,7 +294,7 @@
             // 
             // Exam_19
             // 
-            this.Exam_19.Location = new System.Drawing.Point(325, 507);
+            this.Exam_19.Location = new System.Drawing.Point(325, 462);
             this.Exam_19.Name = "Exam_19";
             this.Exam_19.Size = new System.Drawing.Size(150, 27);
             this.Exam_19.TabIndex = 22;
@@ -299,7 +305,7 @@
             // Exam_24
             // 
             this.Exam_24.ForeColor = System.Drawing.Color.Peru;
-            this.Exam_24.Location = new System.Drawing.Point(169, 540);
+            this.Exam_24.Location = new System.Drawing.Point(169, 495);
             this.Exam_24.Name = "Exam_24";
             this.Exam_24.Size = new System.Drawing.Size(150, 27);
             this.Exam_24.TabIndex = 27;
@@ -310,7 +316,7 @@
             // Exam_23
             // 
             this.Exam_23.ForeColor = System.Drawing.Color.Maroon;
-            this.Exam_23.Location = new System.Drawing.Point(169, 507);
+            this.Exam_23.Location = new System.Drawing.Point(169, 462);
             this.Exam_23.Name = "Exam_23";
             this.Exam_23.Size = new System.Drawing.Size(150, 27);
             this.Exam_23.TabIndex = 26;
@@ -321,7 +327,7 @@
             // Exam_22
             // 
             this.Exam_22.ForeColor = System.Drawing.Color.Maroon;
-            this.Exam_22.Location = new System.Drawing.Point(169, 474);
+            this.Exam_22.Location = new System.Drawing.Point(169, 429);
             this.Exam_22.Name = "Exam_22";
             this.Exam_22.Size = new System.Drawing.Size(150, 27);
             this.Exam_22.TabIndex = 25;
@@ -332,7 +338,7 @@
             // Exam_21
             // 
             this.Exam_21.ForeColor = System.Drawing.Color.Maroon;
-            this.Exam_21.Location = new System.Drawing.Point(169, 441);
+            this.Exam_21.Location = new System.Drawing.Point(169, 396);
             this.Exam_21.Name = "Exam_21";
             this.Exam_21.Size = new System.Drawing.Size(150, 27);
             this.Exam_21.TabIndex = 24;
@@ -343,7 +349,7 @@
             // Exam_28
             // 
             this.Exam_28.ForeColor = System.Drawing.Color.Coral;
-            this.Exam_28.Location = new System.Drawing.Point(13, 540);
+            this.Exam_28.Location = new System.Drawing.Point(13, 495);
             this.Exam_28.Name = "Exam_28";
             this.Exam_28.Size = new System.Drawing.Size(150, 27);
             this.Exam_28.TabIndex = 31;
@@ -354,7 +360,7 @@
             // Exam_27
             // 
             this.Exam_27.ForeColor = System.Drawing.Color.SteelBlue;
-            this.Exam_27.Location = new System.Drawing.Point(13, 507);
+            this.Exam_27.Location = new System.Drawing.Point(13, 462);
             this.Exam_27.Name = "Exam_27";
             this.Exam_27.Size = new System.Drawing.Size(150, 27);
             this.Exam_27.TabIndex = 30;
@@ -365,7 +371,7 @@
             // Exam_26
             // 
             this.Exam_26.ForeColor = System.Drawing.Color.SteelBlue;
-            this.Exam_26.Location = new System.Drawing.Point(13, 474);
+            this.Exam_26.Location = new System.Drawing.Point(13, 429);
             this.Exam_26.Name = "Exam_26";
             this.Exam_26.Size = new System.Drawing.Size(150, 27);
             this.Exam_26.TabIndex = 29;
@@ -376,7 +382,7 @@
             // Exam_25
             // 
             this.Exam_25.ForeColor = System.Drawing.Color.Peru;
-            this.Exam_25.Location = new System.Drawing.Point(13, 441);
+            this.Exam_25.Location = new System.Drawing.Point(13, 396);
             this.Exam_25.Name = "Exam_25";
             this.Exam_25.Size = new System.Drawing.Size(150, 27);
             this.Exam_25.TabIndex = 28;
@@ -398,7 +404,7 @@
             // Exam_35
             // 
             this.Exam_35.ForeColor = System.Drawing.Color.Coral;
-            this.Exam_35.Location = new System.Drawing.Point(12, 573);
+            this.Exam_35.Location = new System.Drawing.Point(12, 528);
             this.Exam_35.Name = "Exam_35";
             this.Exam_35.Size = new System.Drawing.Size(150, 27);
             this.Exam_35.TabIndex = 33;
@@ -408,7 +414,7 @@
             // 
             // Exam_31
             // 
-            this.Exam_31.Location = new System.Drawing.Point(325, 638);
+            this.Exam_31.Location = new System.Drawing.Point(325, 593);
             this.Exam_31.Name = "Exam_31";
             this.Exam_31.Size = new System.Drawing.Size(150, 27);
             this.Exam_31.TabIndex = 36;
@@ -419,7 +425,7 @@
             // Exam_30
             // 
             this.Exam_30.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.Exam_30.Location = new System.Drawing.Point(325, 605);
+            this.Exam_30.Location = new System.Drawing.Point(325, 560);
             this.Exam_30.Name = "Exam_30";
             this.Exam_30.Size = new System.Drawing.Size(150, 27);
             this.Exam_30.TabIndex = 35;
@@ -430,7 +436,7 @@
             // Exam_29
             // 
             this.Exam_29.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.Exam_29.Location = new System.Drawing.Point(325, 572);
+            this.Exam_29.Location = new System.Drawing.Point(325, 527);
             this.Exam_29.Name = "Exam_29";
             this.Exam_29.Size = new System.Drawing.Size(150, 27);
             this.Exam_29.TabIndex = 34;
@@ -440,7 +446,7 @@
             // 
             // Exam_34
             // 
-            this.Exam_34.Location = new System.Drawing.Point(169, 638);
+            this.Exam_34.Location = new System.Drawing.Point(169, 593);
             this.Exam_34.Name = "Exam_34";
             this.Exam_34.Size = new System.Drawing.Size(150, 27);
             this.Exam_34.TabIndex = 40;
@@ -451,7 +457,7 @@
             // Exam_33
             // 
             this.Exam_33.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.Exam_33.Location = new System.Drawing.Point(169, 605);
+            this.Exam_33.Location = new System.Drawing.Point(169, 560);
             this.Exam_33.Name = "Exam_33";
             this.Exam_33.Size = new System.Drawing.Size(150, 27);
             this.Exam_33.TabIndex = 39;
@@ -462,7 +468,7 @@
             // Exam_32
             // 
             this.Exam_32.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.Exam_32.Location = new System.Drawing.Point(169, 572);
+            this.Exam_32.Location = new System.Drawing.Point(169, 527);
             this.Exam_32.Name = "Exam_32";
             this.Exam_32.Size = new System.Drawing.Size(150, 27);
             this.Exam_32.TabIndex = 38;
@@ -472,16 +478,17 @@
             // 
             // Exam_37
             // 
-            this.Exam_37.Location = new System.Drawing.Point(13, 638);
+            this.Exam_37.Location = new System.Drawing.Point(13, 593);
             this.Exam_37.Name = "Exam_37";
             this.Exam_37.Size = new System.Drawing.Size(150, 27);
             this.Exam_37.TabIndex = 43;
-            this.Exam_37.Text = "Intersect 1";
+            this.Exam_37.Text = "* Average 1";
             this.Exam_37.UseVisualStyleBackColor = true;
+            this.Exam_37.Click += new System.EventHandler(this.Exam_37_Click);
             // 
             // Exam_36
             // 
-            this.Exam_36.Location = new System.Drawing.Point(13, 605);
+            this.Exam_36.Location = new System.Drawing.Point(13, 560);
             this.Exam_36.Name = "Exam_36";
             this.Exam_36.Size = new System.Drawing.Size(150, 27);
             this.Exam_36.TabIndex = 42;
@@ -489,11 +496,74 @@
             this.Exam_36.UseVisualStyleBackColor = true;
             this.Exam_36.Click += new System.EventHandler(this.Exam_36_Click);
             // 
+            // Exam_43
+            // 
+            this.Exam_43.Location = new System.Drawing.Point(12, 659);
+            this.Exam_43.Name = "Exam_43";
+            this.Exam_43.Size = new System.Drawing.Size(150, 27);
+            this.Exam_43.TabIndex = 49;
+            this.Exam_43.Text = "* Average";
+            this.Exam_43.UseVisualStyleBackColor = true;
+            // 
+            // Exam_40
+            // 
+            this.Exam_40.Location = new System.Drawing.Point(12, 626);
+            this.Exam_40.Name = "Exam_40";
+            this.Exam_40.Size = new System.Drawing.Size(150, 27);
+            this.Exam_40.TabIndex = 48;
+            this.Exam_40.Text = "* Average 2";
+            this.Exam_40.UseVisualStyleBackColor = true;
+            this.Exam_40.Click += new System.EventHandler(this.Exam_40_Click);
+            // 
+            // Exam_42
+            // 
+            this.Exam_42.Location = new System.Drawing.Point(168, 659);
+            this.Exam_42.Name = "Exam_42";
+            this.Exam_42.Size = new System.Drawing.Size(150, 27);
+            this.Exam_42.TabIndex = 47;
+            this.Exam_42.Text = "* Min 2";
+            this.Exam_42.UseVisualStyleBackColor = true;
+            // 
+            // Exam_39
+            // 
+            this.Exam_39.ForeColor = System.Drawing.Color.DarkGoldenrod;
+            this.Exam_39.Location = new System.Drawing.Point(168, 626);
+            this.Exam_39.Name = "Exam_39";
+            this.Exam_39.Size = new System.Drawing.Size(150, 27);
+            this.Exam_39.TabIndex = 46;
+            this.Exam_39.Text = "* Min 1";
+            this.Exam_39.UseVisualStyleBackColor = true;
+            // 
+            // Exam_41
+            // 
+            this.Exam_41.Location = new System.Drawing.Point(324, 659);
+            this.Exam_41.Name = "Exam_41";
+            this.Exam_41.Size = new System.Drawing.Size(150, 27);
+            this.Exam_41.TabIndex = 45;
+            this.Exam_41.Text = "* Sum 2";
+            this.Exam_41.UseVisualStyleBackColor = true;
+            // 
+            // Exam_38
+            // 
+            this.Exam_38.ForeColor = System.Drawing.Color.DarkGoldenrod;
+            this.Exam_38.Location = new System.Drawing.Point(324, 626);
+            this.Exam_38.Name = "Exam_38";
+            this.Exam_38.Size = new System.Drawing.Size(150, 27);
+            this.Exam_38.TabIndex = 44;
+            this.Exam_38.Text = "* Sum 1";
+            this.Exam_38.UseVisualStyleBackColor = true;
+            // 
             // Example3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(688, 710);
+            this.Controls.Add(this.Exam_43);
+            this.Controls.Add(this.Exam_40);
+            this.Controls.Add(this.Exam_42);
+            this.Controls.Add(this.Exam_39);
+            this.Controls.Add(this.Exam_41);
+            this.Controls.Add(this.Exam_38);
             this.Controls.Add(this.Exam_37);
             this.Controls.Add(this.Exam_36);
             this.Controls.Add(this.Exam_34);
@@ -585,5 +655,11 @@
         private System.Windows.Forms.Button Exam_32;
         private System.Windows.Forms.Button Exam_37;
         private System.Windows.Forms.Button Exam_36;
+        private System.Windows.Forms.Button Exam_43;
+        private System.Windows.Forms.Button Exam_40;
+        private System.Windows.Forms.Button Exam_42;
+        private System.Windows.Forms.Button Exam_39;
+        private System.Windows.Forms.Button Exam_41;
+        private System.Windows.Forms.Button Exam_38;
     }
 }

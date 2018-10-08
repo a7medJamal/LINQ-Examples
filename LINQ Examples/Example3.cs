@@ -552,7 +552,7 @@ namespace LINQ_Examples
                         from o in c.Orders
                         select new { o.Quantity }).Min(o => o.Quantity);
             lst.Items.Clear();
-            lst.Items.Add("Min Quantity=" + expr);
+            lst.Items.Add("Max Quantity=" + expr);
         }
         #endregion
 
@@ -563,7 +563,35 @@ namespace LINQ_Examples
                         from o in c.Orders
                         select new { o.Quantity }).Max(o => o.Quantity);
             lst.Items.Clear();
-            lst.Items.Add("Min Quantity=" + expr);
+            lst.Items.Add("Max Quantity=" + expr);
+        }
+        #endregion
+
+        #region Average
+        private void Exam_37_Click(object sender, EventArgs e)
+        {
+            var expr = (from p in prodeucts
+                        select new { p.Price }).Average(p=>p.Price);
+            lst.Items.Clear();
+            lst.Items.Add("Average Quantity=" + expr);
+        }
+
+        private void Exam_40_Click(object sender, EventArgs e)
+        {
+            var expr = from c in customers
+                       join o in (from c in customers
+                                  from o in c.Orders
+                                  join p in prodeucts on o.ProductID equals p.IdProduct
+                                  select new { c.Name, orderamount = o.Quantity * p.Price }
+                                    ) on c.Name equals o.Name
+                                    into CustWithOrders
+                       select new { c.Name, AvargAmount=CustWithOrders.Average(o => o.orderamount) };
+
+            lst.Items.Clear();
+            foreach(var x in expr)
+            { 
+            lst.Items.Add( x.Name +"(" +x.AvargAmount +")");
+            }
         }
         #endregion
     }
