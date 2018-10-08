@@ -6,7 +6,7 @@
      -Select
      -SelectMany
      
--Ordering Operatators
+ *Ordering Operatators
       -OrderBy
       -OrderByDescending
       -ThenBy
