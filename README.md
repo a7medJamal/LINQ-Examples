@@ -1,31 +1,31 @@
-# LINQ-Examples
- LINQ Tutorial
 
--The Where Operator
--Projection Operatators
+# LINQ Tutorial
+
+# The Where Operator
+# Projection Operatators
      -Select
      -SelectMany
      
- *Ordering Operatators
+ # Ordering Operatators
       -OrderBy
       -OrderByDescending
       -ThenBy
       -ThenByDescending
       -Reverse
       
- * Grouping Operatators
- * Join Operatators
+ # Grouping Operatators
+ # Join Operatators
        -Join 
        -GroupJoin (Outer Join)
        -SubQuery
        
- *Set Operatators
+ # Set Operatators
        -Distinct
        -Union
        -Intersect
        -Except
        
-* Aggregate Operatators
+# Aggregate Operatators
        -count
        -LongCount
        -Sum
