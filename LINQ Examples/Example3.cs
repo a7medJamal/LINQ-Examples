@@ -514,7 +514,27 @@ namespace LINQ_Examples
 
         }
         #endregion
+
+        #region Neasted Query With Sum
+        private void Exam_32_Click(object sender, EventArgs e)
+        {
+            var expr = from c in customers
+                       join o in (from c in customers
+                                  from o in c.Orders
+                                  join p in prodeucts on o.ProductID equals p.IdProduct
+                                  select new { c.Name, Amount = o.Quantity * p.Price }) on c.Name equals o.Name
+                               into CustomersWithOrders
+
+                       select new { c.Name, totalAmount = CustomersWithOrders.Sum(o => o.Amount) };
+
+            lst.Items.Clear();
+            foreach (var x in expr)
+            {
+                lst.Items.Add("ID " + "_" + x.Name + "-" + "Order Count" + "_" + x.totalAmount);
+            }
+        }
     }
+    #endregion
 
 
 }

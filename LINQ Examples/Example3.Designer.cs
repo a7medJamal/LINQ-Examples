@@ -464,8 +464,9 @@
             this.Exam_32.Name = "Exam_32";
             this.Exam_32.Size = new System.Drawing.Size(150, 27);
             this.Exam_32.TabIndex = 38;
-            this.Exam_32.Text = "GroupBy 1";
+            this.Exam_32.Text = "* neasted Query";
             this.Exam_32.UseVisualStyleBackColor = true;
+            this.Exam_32.Click += new System.EventHandler(this.Exam_32_Click);
             // 
             // Exam_37
             // 
